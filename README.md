@@ -4,7 +4,7 @@ Collection of small frontend exercises.
 
 ## Projects
 
-##Flex-Box Pricing Plans
+## Flex-Box Pricing Plans
 - Practice Flexbox
 
 ## Color grid Exercise
