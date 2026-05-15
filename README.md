@@ -4,6 +4,8 @@ Collection of small frontend exercises.
 
 ## Projects
 
+## Flex-Box Pricing Plans
+- Practice Flexbox
 
 ## Color grid Exercise
 - Practice project to explore different CSS color formats (hex, rgb, hsl, named colors)
