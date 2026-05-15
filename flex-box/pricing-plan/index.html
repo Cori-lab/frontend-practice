@@ -7,21 +7,53 @@
     <title>Pricing Plans</title>
   </head>
   <body>
-    <header>
-      <h1>Pricing Plans</h1>
-    </header>
+    <span class="pricing-label">Preisgestaltung</span>
+    <h1>Wähle deinen Plan</h1>
+
     <div class="pricing-container">
       <div class="pricing-card basic-plan">
-        <h2>Basic</h2>
-        <p>$9/month</p>
+        <h2 class="plan-name">Basic</h2>
+        <p class="plan-price"><sup>€</sup>9</p>
+        <p class="plan-period">pro Monat</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li><span class="icon-check">✓</span> 1 Nutzer</li>
+          <li><span class="icon-check">✓</span> 5 GB Speicher</li>
+          <li><span class="icon-check">✓</span> E-Mail-Support</li>
+          <li class="unavailable">
+            <span class="icon-minus">–</span> Analysen
+          </li>
+        </ul>
+        <button class="plan-btn">Loslegen</button>
       </div>
+
       <div class="pricing-card pro-plan">
-        <h2>Pro</h2>
-        <p>$19/month</p>
+        <span class="plan-badge">Empfohlen</span>
+        <h2 class="plan-name">Pro</h2>
+        <p class="plan-price"><sup>€</sup>19</p>
+        <p class="plan-period">pro Monat</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li><span class="icon-check">✓</span> 5 Nutzer</li>
+          <li><span class="icon-check">✓</span> 50 GB Speicher</li>
+          <li><span class="icon-check">✓</span> Prioritäts-Support</li>
+          <li><span class="icon-check">✓</span> Erweiterte Analysen</li>
+        </ul>
+        <button class="plan-btn plan-btn--featured">Jetzt starten</button>
       </div>
+
       <div class="pricing-card premium-plan">
-        <h2>Premium</h2>
-        <p>$29/month</p>
+        <h2 class="plan-name">Premium</h2>
+        <p class="plan-price"><sup>€</sup>29</p>
+        <p class="plan-period">pro Monat</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li><span class="icon-check">✓</span> Unbegrenzte Nutzer</li>
+          <li><span class="icon-check">✓</span> 500 GB Speicher</li>
+          <li><span class="icon-check">✓</span> 24/7-Support</li>
+          <li><span class="icon-check">✓</span> API-Zugang</li>
+        </ul>
+        <button class="plan-btn">Loslegen</button>
       </div>
     </div>
   </body>
