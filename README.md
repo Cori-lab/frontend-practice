@@ -4,6 +4,10 @@ Collection of small frontend exercises.
 
 ## Projects
 
+## Playing Cards
+- Practice Flexbox and Grid-System
+- Transformations and Styling
+
 ## Flex-Box Pricing Plans
 - Practice Flexbox
 
