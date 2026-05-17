@@ -82,7 +82,7 @@ body {
 }
 
 .left {
-    justify-content: center;
+    justify-content: flex-start;
     align-self: flex-start;
 }
 
@@ -106,7 +106,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .center {
@@ -116,5 +116,9 @@ body {
 .right {
     justify-content: flex-end;
     align-self: flex-end;
+    transform: rotate(180deg);
+}
+
+.flip {
     transform: rotate(180deg);
 }
