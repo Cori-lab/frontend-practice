@@ -4,6 +4,9 @@ Collection of small frontend exercises.
 
 ## Projects
 
+## Orbit Animation
+- Keyframe Animation
+
 ## Playing Cards
 - Practice Flexbox and Grid-System
 - Transformations and Styling
