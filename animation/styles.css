@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: darkblue;
+  background-image: radial-gradient(#082bc4, #010517)
 }
 
 .space {
@@ -19,8 +19,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
   border-radius: 50%;
+    background-image:
+    radial-gradient(circle at 30% 30%, #6bd66b 8%, transparent 9%),
+    radial-gradient(circle at 70% 40%, #5cc45c 10%, transparent 11%),
+    radial-gradient(circle at 45% 70%, #4ea64e 12%, transparent 13%),
+    radial-gradient(circle at 75% 75%, #7be07b 7%, transparent 8%),
+    linear-gradient(180deg, #3fa9f5, #1d6fd1);
+
+    box-shadow: 0 0 60px rgba(56, 163, 165, 0.8);
+
+    animation: earth 10s linear infinite
 }
 
 .orbit {
@@ -36,12 +45,36 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: white;
+  background-image:
+    radial-gradient(circle at 30% 30%, #8a8a8a 8%, transparent 9%),
+    radial-gradient(circle at 65% 40%, #7a7a7a 10%, transparent 11%),
+    radial-gradient(circle at 40% 70%, #999 6%, transparent 7%),
+    radial-gradient(circle at 75% 75%, #6f6f6f 7%, transparent 8%),
+    linear-gradient(145deg, #d8d8d8, #9c9c9c);
   position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  box-shadow: 0 0 20px white;
 }
+
+.star {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-image: radial-gradient(#ffd147, transparent);
+  opacity: 0.5;
+  box-shadow: 0 0 140px #ffd147;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+.star:nth-child(1) { top: 40%; left: 20%; animation-delay: 0s; }
+.star:nth-child(2) { top: 30%; left: 90%; animation-delay: 1s; }
+.star:nth-child(3) { top: 100%; left: 40%; animation-delay: 0.5s; }
+.star:nth-child(4) { top: 60%; left: 10%; animation-delay: 1.2s; }
+.star:nth-child(5) { top: 0%; left: 40%; animation-delay: 1.4s; }
+.star:nth-child(6) { top: 80%; left: 100%; animation-delay: 1.4s; }
 
 @keyframes orbit {
 0% {
@@ -50,4 +83,25 @@ transform: rotate(0deg) translate(-50%, -50%);
 100% {
 transform: rotate(360deg) translate(-50%, -50%);
 }
+}
+
+@keyframes earth {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
 }
