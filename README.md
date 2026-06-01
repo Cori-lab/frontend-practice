@@ -4,6 +4,10 @@ Collection of small frontend exercises.
 
 ## Projects
 
+## Newspaper
+- Grid-Layout
+- Mobile View
+
 ## Orbit Animation
 - Keyframe Animation
 
