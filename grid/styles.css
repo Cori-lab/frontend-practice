@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+.newspaper-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    gap: 24px;
+    grid-template-areas: "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+    padding: 10px;
+}
+
+.title {
+    grid-area: title;
+    background-color: #0b2027;
+    padding: 32px 20px;
+        border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.feature-article {
+    grid-area: feature-article;
+}
+
+.cover-image {
+    grid-area: cover-image;
+}
+
+.cover-image img {
+    max-width: 100%;
+    height: auto;
+display: block;
+object-fit: cover;
+}
+
+.secondary-article {
+    grid-area: secondary-article;
+}
+
+.small-article1 {
+    grid-area: small-article1;
+}
+
+.small-article2 {
+    grid-area: small-article2;
+}
+
+.small-article3 {
+    grid-area: small-article3;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: linen;
+}
+
+h2 {
+        font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h3 {
+        font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+p {
+        font-family: "Merriweather", serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+     max-width: 65ch;
+}
